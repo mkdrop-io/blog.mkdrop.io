@@ -1,0 +1,42 @@
+title: Tokens Flow Management
+email: team@mkdrop.io
+description: >
+  We blog about token flow management and
+  share our experience in using web3 tools
+  for airdrops and token distribution 
+baseurl: ""
+url: "https://blog.mkdrop.io"
+github_username: bsnisar
+markdown: kramdown
+author:
+  name: "MkDrop"
+  email: team@mkdrop.io
+encoding: utf-8
+timezone: Europe/Moscow
+permalink: :year-:month-:day-:title.html
+exclude:
+  - README.md
+  - Gemfile.lock
+  - Gemfile
+  - Rakefile
+  - LICENSE.txt
+  - id_rsa.enc
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 8
+paginate_path: "p/:num"
+excerpt_separator: <!--more-->
+
+feed:
+  title: blog.mkdrop.io
+  subtitle: Tokens Flow
+  path: rss.xml
+
+sass:
+  style: compressed
+  deploy_style: compressed
+  compile_in_place: false
